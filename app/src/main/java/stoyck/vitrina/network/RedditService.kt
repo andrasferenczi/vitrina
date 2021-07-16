@@ -18,7 +18,7 @@ class RedditService @Inject constructor(
     @Named("reddit_client_id")
     private val clientId: String
 ) {
-    private val usernameAndPassword = "$clientId: "
+    private val usernameAndPassword = "$clientId:"
 
     private val authorization: String =
         "Basic " + Base64.encodeToString(
